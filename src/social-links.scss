@@ -1,0 +1,29 @@
+.social {
+  &__wrapper {
+    background-color: #f2ae02;
+    width: 28px;
+    height: 28px;
+    box-sizing: content-box;
+    display: inline-block;
+    border-radius: 15px;
+    color: white;
+    margin: 0 4px;
+    transition: background-color 170ms ease-in-out, color 170ms ease-in-out;
+
+    &--dim {
+      background-color: rgba(242,174,2,.5);
+      color: rgba(255,255,255,.4);
+    }
+
+    &:hover {
+      background-color: #f2ae02;
+      color: white;
+    }
+  }
+
+  &__icon {
+    line-height: 28px;
+    vertical-align: bottom;
+    font-size: 15px;
+  }
+}
