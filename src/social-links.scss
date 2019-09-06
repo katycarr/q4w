@@ -1,23 +1,22 @@
 .social {
+  padding-top: 30px;
+
   &__wrapper {
-    background-color: #f2ae02;
     width: 28px;
     height: 28px;
     box-sizing: content-box;
     display: inline-block;
     border-radius: 15px;
-    color: white;
+    color: rgb(183,228,207);
     margin: 0 4px;
     transition: background-color 170ms ease-in-out, color 170ms ease-in-out;
 
     &--dim {
-      background-color: rgba(242,174,2,.5);
-      color: rgba(255,255,255,.4);
+      color: rgba(183,228,207,0.4);
     }
 
     &:hover {
-      background-color: #f2ae02;
-      color: white;
+      color: rgb(183,228,207);
     }
   }
 

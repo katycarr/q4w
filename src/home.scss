@@ -1,0 +1,38 @@
+.segment {
+  margin: auto;
+  padding-bottom: 30px;
+  &--first {
+    padding-top: 30px;
+  }
+  max-width: 880px;
+  &__text {
+    font-size: 18px;
+    max-width: 36em;
+    margin: 30px auto;
+    font-weight: 600;
+    line-height: 1.44;
+  }
+
+  &__links {
+    color: #f1ad03;
+  }
+
+  &__link {
+    transition: color 100ms ease-in-out;
+    text-decoration: none;
+    color: #ffbf00;
+    margin-right: 58px;
+
+    &:hover {
+      color: rgba(255,191,0,.6);
+    }
+
+    &--last {
+      margin-right: 0;
+    }
+  }
+}
+
+img.logo {
+  max-height: 357px;
+}

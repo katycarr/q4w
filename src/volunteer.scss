@@ -1,0 +1,121 @@
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.vol {
+  &__info {
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.44;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  &__form {
+    padding: 40px;
+  }
+
+  &__check {
+    text-align: left;
+    margin-bottom: 30px;
+
+    input {
+      position: absolute;
+      z-index: 999;
+      opacity: 0;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+
+      &:checked + .vol__check__box:after {
+        visibility: visible;
+      }
+    }
+
+    &__label {
+      vertical-align: middle;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.44;
+
+      svg {
+        font-size: 12px;
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+    }
+
+    &__box {
+      position: relative;
+      height: 18px;
+      width: 18px;
+      border: 2px solid #b7e4cf;
+      display: inline-block;
+      border-radius: 2px;
+      margin-right: 30px;
+      vertical-align: middle;
+      cursor: pointer;
+
+      &:after {
+        content: "";
+        position: absolute;
+        visibility: hidden;
+        left: 5px;
+        top: -8px;
+        width: 8px;
+        height: 18px;
+        border: solid white;
+        border-width: 0 4px 4px 0;
+        transform: rotate(40deg);
+      }
+    }
+  }
+
+  &__error {
+    visibility: hidden;
+  }
+
+  &__text-input {
+    border: solid 2px white;
+    background-color: #283052;
+    color: white;
+    font-size: 18px;
+    line-height: 1.44;
+    padding: 7px 15px;
+    border-radius: 1px;
+    margin-bottom: 30px;
+
+    &::placeholder {
+      color: white;
+      opacity: 0.4;
+    }
+
+    &:focus {
+      border-color: #b7e4cf;
+      outline: none;
+    }
+
+    &--required:valid:not(:focus) {
+      background-image: url('./assets/check.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-origin: content-box;
+    }
+
+    &--visited:invalid {
+      border-color: #b61b28;
+      background-image: url('./assets/x-icon-2.png');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-origin: content-box;
+      background-size: 24px 16px;
+
+      & + div.vol__error {
+        visibility: visible;
+      }
+    }
+
+  }
+}
