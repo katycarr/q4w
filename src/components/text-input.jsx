@@ -19,9 +19,12 @@ class TextInput extends Component {
       placeholder,
       type,
       pattern,
+      full,
     } = this.props;
+
     return (
-      <div className="vol__input-container">
+        <div className={classnames('vol__input-container',
+            { 'vol__input-container--full': full })}>
         <label htmlFor={label}>
           {label}
           {required ? '*' : ''}
@@ -55,12 +58,14 @@ TextInput.propTypes = {
   placeholder: PropTypes.string.isRequired,
   type: PropTypes.string,
   pattern: PropTypes.string,
+  full: PropTypes.bool,
 };
 
 TextInput.defaultProps = {
   type: 'text',
   required: false,
   pattern: '^[a-zA-Z\s-]{1,20}$',
+  full: false,
 };
 
 export default TextInput;

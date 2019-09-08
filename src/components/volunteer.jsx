@@ -28,19 +28,18 @@ const emailReg = '^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-
 class Volunteer extends Component {
   renderTextInputs() {
     return (
-      <React.Fragment>
+      <div className="vol__inputs">
         <TextInput label="First Name" placeholder="Bailey" required />
         <TextInput label="Last Name" placeholder="Warren" required />
-        <TextInput label="Email" placeholder="bailey@elizabethwarren.com" required pattern={emailReg} />
+        <TextInput label="Email" placeholder="bailey@elizabethwarren.com" required pattern={emailReg} full />
         <TextInput label="Zip" placeholder="20500" required type="text" pattern="^d{5}$" />
         <TextInput label="Phone" placeholder="000 000 0000" type="tel" />
-      </React.Fragment>
+      </div>
     );
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log('submitted');
   }
 
   render() {

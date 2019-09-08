@@ -20,7 +20,7 @@ class DropdownCheckbox extends Component {
           <FontAwesomeIcon icon={show ? faChevronUp : faChevronDown } />
         </label>
         {show && 
-          <div className="check__desc">
+          <div className="vol__check__desc">
             {desc}
           </div>
         }

@@ -39,6 +39,7 @@ h1 {
       font-size: 18px;
       font-weight: 400;
       line-height: 1.44;
+      cursor: pointer;
 
       svg {
         font-size: 12px;
@@ -71,10 +72,38 @@ h1 {
         transform: rotate(40deg);
       }
     }
+
+    &__desc {
+      padding-top: 30px;
+      font-size: 14px;
+      line-height: 1.43;
+    }
   }
 
   &__error {
     visibility: hidden;
+    text-align: right;
+    color: #b61b28;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__input-container {
+    text-align: left;
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 15px;
+    label {
+      display: block;
+      padding-bottom: 8px;
+    }
+    &--full {
+      width: 100%;
+    }
   }
 
   &__text-input {
@@ -85,7 +114,7 @@ h1 {
     line-height: 1.44;
     padding: 7px 15px;
     border-radius: 1px;
-    margin-bottom: 30px;
+    width: 100%;
 
     &::placeholder {
       color: white;
