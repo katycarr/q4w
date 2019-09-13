@@ -15,10 +15,12 @@
 
   &__links {
     color: #f1ad03;
+    font-size: 18px;
+    font-weight: 600;
   }
 
   &__link {
-    transition: color 100ms ease-in-out;
+    transition: color 300ms ease-in-out;
     text-decoration: none;
     color: #ffbf00;
     margin-right: 58px;

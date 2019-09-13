@@ -1,5 +1,7 @@
 .social {
-  padding-top: 30px;
+  margin: auto;
+  margin-top: 30px;
+  display: inline-block;
 
   &__wrapper {
     width: 28px;
@@ -9,20 +11,22 @@
     border-radius: 15px;
     color: rgb(183,228,207);
     margin: 0 4px;
-    transition: background-color 170ms ease-in-out, color 170ms ease-in-out;
+    opacity: 1;
+    transition: opacity 170ms ease-in-out;
 
     &--dim {
-      color: rgba(183,228,207,0.4);
+      opacity: 0.4;
     }
 
     &:hover {
-      color: rgb(183,228,207);
+      opacity: 1;
     }
   }
 
   &__icon {
     line-height: 28px;
     vertical-align: bottom;
-    font-size: 15px;
+    font-size: 18px;
+    height: 18px;
   }
 }

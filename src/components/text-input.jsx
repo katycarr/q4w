@@ -64,7 +64,7 @@ TextInput.propTypes = {
 TextInput.defaultProps = {
   type: 'text',
   required: false,
-  pattern: '^[a-zA-Z\s-]{1,20}$',
+  pattern: '^[a-zA-Zs-]{1,20}$',
   full: false,
 };
 
