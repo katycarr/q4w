@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import '../home.scss';
 import logo from '../assets/logo.png';
 import SocialLinks from './social-links';
@@ -8,6 +9,15 @@ import Layout from './layout';
 class Home extends Component {
   componentDidMount() {
     document.title = 'Queens for Warren';
+
+    axios.get('/.netlify/functions/hello')
+      .then(json => {
+        if (json && json.data) {
+          console.log(json.data.msg);
+        } else {
+          console.log('error');
+        }
+      });
   }
 
   render() {
