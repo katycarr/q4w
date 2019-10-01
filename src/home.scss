@@ -1,3 +1,5 @@
+@import "variables";
+
 .segment {
   margin: auto;
   padding-bottom: 30px;
@@ -14,7 +16,7 @@
   }
 
   &__links {
-    color: #f1ad03;
+    color: $queensYellow;
     font-size: 18px;
     font-weight: 600;
   }
@@ -22,15 +24,25 @@
   &__link {
     transition: color 300ms ease-in-out;
     text-decoration: none;
-    color: #ffbf00;
+    color: $queensYellow;
     margin-right: 58px;
 
     &:hover {
-      color: rgba(255,191,0,.6);
+      color: $dimYellow;
+    }
+
+    @media (max-width: $mobileBreakpoint) {
+      display: block;
+      margin: auto;
+      margin-bottom: 40px;
     }
 
     &--last {
       margin-right: 0;
+      
+      @media (max-width: $mobileBreakpoint) {
+        margin-bottom: 0;
+      }
     }
   }
 }

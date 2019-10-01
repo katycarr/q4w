@@ -5,6 +5,7 @@ import bg from '../assets/bg.jpg';
 class Layout extends Component {
   componentDidMount() {
     document.title = 'Queens for Warren';
+    window.scrollTo(0, 0);
   }
 
   render() {

@@ -33,28 +33,28 @@ class Home extends Component {
             president. We hope you’ll join us!
           </div>
           <div className="segment__links">
-            <Link
-              className="segment__link" 
-              to="/volunteer"
-            >
-              Volunteer
-            </Link>
             <a
               className="segment__link"
               href="http://ewar.ren/queens"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Attend an event
+              Upcoming Events
             </a>
             <a
-              className="segment__link segment__link--last"
-              href="/"
+              className="segment__link"
+              href="https://www.elections.ny.gov/VotingRegister.html"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Donate
+              NY Voter Registration
             </a>
+            <Link
+              className="segment__link segment__link--last" 
+              to="/volunteer"
+            >
+              Newsletter
+            </Link>
           </div>
         </div>
         <div className="segment">

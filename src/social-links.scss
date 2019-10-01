@@ -1,14 +1,21 @@
+@import "variables";
+
 .social {
   margin: auto;
   margin-top: 30px;
   display: inline-block;
+
+  @media (max-width: $mobileBreakpoint) {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
 
   &__wrapper {
     width: 28px;
     height: 28px;
     box-sizing: content-box;
     display: inline-block;
-    border-radius: 15px;
     color: rgb(183,228,207);
     margin: 0 4px;
     opacity: 1;

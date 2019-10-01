@@ -31,20 +31,20 @@ class SocialLinks extends Component {
           <FontAwesomeIcon icon={faInstagram} className="social__icon" />
         </a>
         <a
-          href="http://twitter.com/queensforwarren"
-          className={wrapperClass}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={twitter} alt="twitter" className="social__icon" />
-        </a>
-        <a
           href="https://www.facebook.com/groups/2399105493707356/?ref=share"
           className={wrapperClass}
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={facebook} alt="facebook" className="social__icon" />
+        </a>
+        <a
+          href="http://twitter.com/queensforwarren"
+          className={wrapperClass}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={twitter} alt="twitter" className="social__icon" />
         </a>
         <a
           href="https://www.queensforwarren.com/mailto:queensforwarren@gmail.com"

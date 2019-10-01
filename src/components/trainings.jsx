@@ -5,9 +5,10 @@ import '../trainings.scss';
 const Trainings = () => {
   const buttons = [
     { name: 'Cavass Training', url: '/' },
-    { name: 'Tabling & Fliering Training', url: '/' },
+    { name: 'Reach Training', url: '/' },
     { name: 'Phone Bank Training', url: '/' },
     { name: 'Text Bank Training', url: '/' },
+    { name: 'All Campaign Trainings', url: '/' },
   ];
 
   return (
