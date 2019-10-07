@@ -47,7 +47,7 @@ class SocialLinks extends Component {
           <img src={twitter} alt="twitter" className="social__icon" />
         </a>
         <a
-          href="https://www.queensforwarren.com/mailto:queensforwarren@gmail.com"
+          href="mailto:queensforwarren@gmail.com"
           className={wrapperClass}
           target="_blank"
           rel="noopener noreferrer"
