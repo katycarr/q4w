@@ -1,7 +1,10 @@
 import axios from 'axios';
-import querystring from 'querystring';
+import Mailchimp from 'mailchimp-api-v3';
 
-const API_KEY = process.env.REACT_APP_MAILCHIMP_API_KEY;
+const apiKey = process.env.REACT_APP_MAILCHIMP_KEY;
+const listId = process.env.REACT_APP_LIST_ID;
+
+const mailchimp = new Mailchimp(apiKey);
 
 const headers = {
     "Access-Control-Allow-Origin" : "*",
@@ -9,7 +12,6 @@ const headers = {
 };
 
 export async function handler(event, context) {
-  console.log('are we here?');
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 200,
@@ -17,7 +19,7 @@ export async function handler(event, context) {
       headers,
     };
   }
-  const params = querystring.parse(event.body);
+  const params = JSON.parse(event.body);
   try {
     const {
       firstName,
@@ -27,16 +29,25 @@ export async function handler(event, context) {
       phone,
     } = params;
     
-    // do mailchimp stuff here
-
+    const path = `/list/${listId}/members`;
+    const response = await mailchimp.post(path, {
+      email_address: email,
+      status: 'subscribed',
+      merge_fields: {
+        FNAME: firstName,
+        LNAME: lastName,
+        PHONE: phone,
+        ZIP: zip,
+      },
+    })
     return {
-      statusCode: 200,
-      body: JSON.stringify({ msg: 'success' }),
-      headers,
-    }
+        statusCode: 200,
+        body: JSON.stringify({ msg: 'success', response }),
+        headers,
+    };
   } catch (e) {
     return {
-      statusCode: 200,
+      statusCode: 500,
       body: JSON.stringify({ msg: e.message }),
       headers,
     }

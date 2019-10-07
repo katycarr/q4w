@@ -1,28 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import '../home.scss';
 import logo from '../assets/logo.png';
 import SocialLinks from './social-links';
 import Layout from './layout';
 
-const isDev = process.env.NODE_ENV !== 'production';
-
 class Home extends Component {
   componentDidMount() {
     document.title = 'Queens for Warren';
-
-    const headers = { 'Content-Type': 'application/json' };
-    const functionPath = isDev ? 'http://localhost:9000' : '';
-    axios.post(functionPath + '/.netlify/functions/mailchimp', {},
-      { headers: headers })
-      .then(json => {
-        if (json && json.data) {
-          console.log(json.data.msg);
-        } else {
-          console.log('error');
-        }
-      });
   }
 
   render() {

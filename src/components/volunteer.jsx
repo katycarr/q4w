@@ -5,14 +5,16 @@ import Layout from './layout';
 import '../volunteer.scss';
 import TextInput from './text-input';
 import Trainings from './trainings';
+import FlashMessage from 'react-flash-message';
 
 const emailReg = '^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$';
+const isDev = process.env.NODE_ENV !== 'production';
 
 class Volunteer extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { done: false };
+    this.state = { done: false, error: false };
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -32,19 +34,16 @@ class Volunteer extends Component {
   handleSubmit(e) {
     // do something with data
     e.preventDefault();
-    try {
-      axios.post('localhost:8888/.netlify/functions/mailchimp', {
-        firstName: e.target.firstName.value,
-        lastName: e.target.lastName.value,
-        email: e.target.email.value,
-        zip: e.target.zip.value,
-        phone: e.target.phone.value,
-      })
-        .then(() => this.setState({ done: true }))
-        .catch((e) => console.log(e));
-    } catch (e) {
-      console.log(e);
-    }
+    const domain = isDev ? 'http://localhost:9000' : '';
+    axios.post(domain + '/.netlify/functions/mailchimp', {
+      firstName: e.target.firstName.value,
+      lastName: e.target.lastName.value,
+      email: e.target.email.value,
+      zip: e.target.zip.value,
+      phone: e.target.phone.value,
+    })
+      .then(() => this.setState({ done: true, error: false }))
+      .catch((e) => { console.log(e); this.setState({ error: true }); });
   }
 
   renderDone() {
@@ -64,6 +63,10 @@ class Volunteer extends Component {
   render() {
     return (
       <Layout>
+        { this.state.error && <FlashMessage duration={5000}>
+            <div className="vol__flash">Oh no! There was an error submitting your info.</div>
+          </FlashMessage>
+        }
         <Link to="/" className="close-link">&times;</Link>
         { this.state.done ? this.renderDone() :
             <React.Fragment>

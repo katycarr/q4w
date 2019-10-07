@@ -16,7 +16,7 @@ const Trainings = () => {
   return (
     <div className="training__container">
       {buttons.map(({ name, url }) => (
-        <a className="button training__button" href={url}>
+        <a className="button training__button" href={url} key={name}>
           {name}
         </a>
       ))}
