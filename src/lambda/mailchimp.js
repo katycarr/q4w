@@ -29,7 +29,7 @@ export async function handler(event, context) {
       phone,
     } = params;
     
-    const path = `/list/${listId}/members`;
+    const path = `/lists/${listId}/members`;
     const response = await mailchimp.post(path, {
       email_address: email,
       status: 'subscribed',
@@ -46,6 +46,7 @@ export async function handler(event, context) {
         headers,
     };
   } catch (e) {
+    console.log(e);
     return {
       statusCode: 500,
       body: JSON.stringify({ msg: e.message }),
