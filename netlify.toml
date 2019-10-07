@@ -6,6 +6,7 @@
 [dev]
     command = "yarn start"
     publish = "build"
+    functions = "src/lambda"
 
 [[headers]]
     for = "/*"

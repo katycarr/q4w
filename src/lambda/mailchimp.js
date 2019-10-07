@@ -4,12 +4,18 @@ import Mailchimp from 'mailchimp-api-v3';
 const apiKey = process.env.REACT_APP_MAILCHIMP_KEY;
 const listId = process.env.REACT_APP_LIST_ID;
 
+console.log(Mailchimp);
+
+console.log(apiKey);
 const mailchimp = new Mailchimp(apiKey);
+console.log(mailchimp);
 
 const headers = {
     "Access-Control-Allow-Origin" : "*",
     "Access-Control-Allow-Headers": "Content-Type"
 };
+
+const ERROR_EXISTS = 'Member Exists';
 
 export async function handler(event, context) {
   if (event.httpMethod !== 'POST') {
@@ -46,9 +52,16 @@ export async function handler(event, context) {
         headers,
     };
   } catch (e) {
+    if (e.title === ERROR_EXISTS) {
+      return {
+          statusCode: 200,
+          body: JSON.stringify({ msg: 'success' }),
+          headers,
+      };
+    }
     console.log(e);
     return {
-      statusCode: 500,
+      statusCode: 400,
       body: JSON.stringify({ msg: e.message }),
       headers,
     }
