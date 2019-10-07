@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "run-p build:**",
+    "build": "react-scripts build && netlify-lambda build src/lambda",
     "build:app": "react-scripts build",
     "start:lambda": "dotenv netlify-lambda serve src/lambda",
     "build:lambda": "netlify-lambda build src/lambda",
