@@ -44,6 +44,7 @@ export async function handler(event, context) {
         LNAME: lastName,
         PHONE: phone,
         ZIP: zip,
+        ADDRESS: '',
       },
     })
     return {
