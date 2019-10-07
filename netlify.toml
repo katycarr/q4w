@@ -2,3 +2,12 @@
     command = "yarn build"
     functions = "lambda"
     publish = "build"
+
+[dev]
+    command = "yarn start"
+    publish = "build"
+
+[[headers]]
+    for = "/*"
+        [headers.values]
+        Access-Control-Allow-Origin = "*"

@@ -20,6 +20,7 @@ class TextInput extends Component {
       type,
       pattern,
       full,
+      name,
     } = this.props;
 
     return (
@@ -31,7 +32,6 @@ class TextInput extends Component {
         </label>
         <input
           type={type}
-          name={label}
           onChange={e => this.setState({ value: e.target.value })}
           placeholder={placeholder}
           required={required}
@@ -41,6 +41,7 @@ class TextInput extends Component {
             { "vol__text-input--required": required },
           )}
           onBlur={() => this.setState({ visited: true })}
+          name={name}
         />
         {required && 
           <div className="vol__error">

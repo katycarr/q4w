@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import Layout from './layout';
 import '../volunteer.scss';
 import TextInput from './text-input';
@@ -19,11 +20,11 @@ class Volunteer extends Component {
   renderTextInputs() {
     return (
       <div className="vol__inputs">
-        <TextInput label="First Name" placeholder="Bailey" required />
-        <TextInput label="Last Name" placeholder="Warren" required />
-        <TextInput label="Email" placeholder="bailey@elizabethwarren.com" required pattern={emailReg} full />
-        <TextInput label="Zip" placeholder="20500" required type="text" pattern="^\d{5}$" />
-        <TextInput label="Phone" placeholder="000 000 0000" type="tel" pattern={null} />
+        <TextInput label="First Name" placeholder="Bailey" required name="firstName" />
+        <TextInput label="Last Name" placeholder="Warren" required name="lastName" />
+        <TextInput label="Email" placeholder="bailey@elizabethwarren.com" required pattern={emailReg} full name="email" />
+        <TextInput label="Zip" placeholder="20500" required type="text" pattern="^\d{5}$" name="zip" />
+        <TextInput label="Phone" placeholder="000 000 0000" type="tel" pattern={null} name="phone" />
       </div>
     );
   }
@@ -31,7 +32,19 @@ class Volunteer extends Component {
   handleSubmit(e) {
     // do something with data
     e.preventDefault();
-    this.setState({ done: true });
+    try {
+      axios.post('localhost:8888/.netlify/functions/mailchimp', {
+        firstName: e.target.firstName.value,
+        lastName: e.target.lastName.value,
+        email: e.target.email.value,
+        zip: e.target.zip.value,
+        phone: e.target.phone.value,
+      })
+        .then(() => this.setState({ done: true }))
+        .catch((e) => console.log(e));
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   renderDone() {
