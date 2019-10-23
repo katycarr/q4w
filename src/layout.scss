@@ -12,6 +12,7 @@
   text-rendering: optimizeLegibility;
   color: white;
   letter-spacing: 0em;
+  border-top: 10px solid $libertyGreen;
 
   @media (max-width: $mobileBreakpoint) {
     overflow: scroll;
@@ -22,20 +23,8 @@
   }
 }
 
-img.background {
-  height: 100%;
-  position: fixed;
-
-  @media (max-width: $mobileBreakpoint) {
-    position: relative;
-    height: auto;
-    left: -20%;
-    width: 140%;
-  }
-}
-
 .content {
-  height: 100%;
+  height: calc(100% - 10px);
   position: absolute;
   background-color: $queensBlue;
   width: 50%;

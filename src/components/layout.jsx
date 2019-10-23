@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../layout.scss';
-import bg from '../assets/bg.jpg';
+
+import Slider from './slider';
 
 class Layout extends Component {
   componentDidMount() {
@@ -11,7 +12,7 @@ class Layout extends Component {
   render() {
     return (
       <div className="App">
-        <img src={bg} className="background" alt="" />
+        <Slider />
         <div className="content">
           <div className="container">
             {this.props.children}
