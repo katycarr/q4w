@@ -1,18 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ae197a3.chunk.css",
-    "main.js": "/static/js/main.79d4ce36.chunk.js",
-    "main.js.map": "/static/js/main.79d4ce36.chunk.js.map",
+    "main.css": "/static/css/main.54e31654.chunk.css",
+    "main.js": "/static/js/main.2d880eee.chunk.js",
+    "main.js.map": "/static/js/main.2d880eee.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.6b082f90.js",
     "runtime~main.js.map": "/static/js/runtime~main.6b082f90.js.map",
-    "static/js/2.bd135a2c.chunk.js": "/static/js/2.bd135a2c.chunk.js",
-    "static/js/2.bd135a2c.chunk.js.map": "/static/js/2.bd135a2c.chunk.js.map",
+    "static/js/2.74557480.chunk.js": "/static/js/2.74557480.chunk.js",
+    "static/js/2.74557480.chunk.js.map": "/static/js/2.74557480.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.15171ca2bc471999ea276e9ed25ca6a5.js": "/precache-manifest.15171ca2bc471999ea276e9ed25ca6a5.js",
+    "precache-manifest.cda4e0fa2d2f7798531b5177f976a492.js": "/precache-manifest.cda4e0fa2d2f7798531b5177f976a492.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.7ae197a3.chunk.css.map": "/static/css/main.7ae197a3.chunk.css.map",
-    "static/media/bg.jpg": "/static/media/bg.26b24751.jpg",
+    "static/css/main.54e31654.chunk.css.map": "/static/css/main.54e31654.chunk.css.map",
+    "static/media/Canvass.jpg": "/static/media/Canvass.6f2d70a4.jpg",
+    "static/media/Debate.jpg": "/static/media/Debate.f97fd487.jpg",
+    "static/media/Gantry.jpg": "/static/media/Gantry.74bcce8a.jpg",
+    "static/media/Katch.jpg": "/static/media/Katch.4be2febf.jpg",
+    "static/media/Laptop.jpg": "/static/media/Laptop.2bfbe69e.jpg",
+    "static/media/Lisa.jpg": "/static/media/Lisa.aa9e52d6.jpg",
+    "static/media/Liz.jpg": "/static/media/Liz.2e35c3f0.jpg",
+    "static/media/Sanger.jpg": "/static/media/Sanger.0c9db247.jpg",
+    "static/media/Signs.jpg": "/static/media/Signs.f033303d.jpg",
+    "static/media/Tabling.jpg": "/static/media/Tabling.07bf9b1c.jpg",
     "static/media/volunteer.scss": "/static/media/check.42a32373.svg",
-    "static/media/logo.png": "/static/media/logo.f38c43ea.png"
+    "static/media/logo.png": "/static/media/logo.9d935bc1.png"
   }
 }

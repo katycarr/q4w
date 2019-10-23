@@ -28,7 +28,7 @@ class Slider extends Component {
   }
 
   componentDidMount() {
-    const intervalId = setInterval(this.goNext, 5000);
+    const intervalId = setInterval(this.goNext, 7500);
     this.setState({ intervalId });
   }
 
