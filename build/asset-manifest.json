@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.54e31654.chunk.css",
-    "main.js": "/static/js/main.2d880eee.chunk.js",
-    "main.js.map": "/static/js/main.2d880eee.chunk.js.map",
+    "main.css": "/static/css/main.b5a2ff0d.chunk.css",
+    "main.js": "/static/js/main.34757b0c.chunk.js",
+    "main.js.map": "/static/js/main.34757b0c.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.6b082f90.js",
     "runtime~main.js.map": "/static/js/runtime~main.6b082f90.js.map",
-    "static/js/2.74557480.chunk.js": "/static/js/2.74557480.chunk.js",
-    "static/js/2.74557480.chunk.js.map": "/static/js/2.74557480.chunk.js.map",
+    "static/js/2.015f6697.chunk.js": "/static/js/2.015f6697.chunk.js",
+    "static/js/2.015f6697.chunk.js.map": "/static/js/2.015f6697.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cda4e0fa2d2f7798531b5177f976a492.js": "/precache-manifest.cda4e0fa2d2f7798531b5177f976a492.js",
+    "precache-manifest.92b8fcc7f7d8a07c77b9201d2c166f57.js": "/precache-manifest.92b8fcc7f7d8a07c77b9201d2c166f57.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.54e31654.chunk.css.map": "/static/css/main.54e31654.chunk.css.map",
+    "static/css/main.b5a2ff0d.chunk.css.map": "/static/css/main.b5a2ff0d.chunk.css.map",
     "static/media/Canvass.jpg": "/static/media/Canvass.6f2d70a4.jpg",
     "static/media/Debate.jpg": "/static/media/Debate.f97fd487.jpg",
     "static/media/Gantry.jpg": "/static/media/Gantry.74bcce8a.jpg",
@@ -22,6 +22,10 @@
     "static/media/Signs.jpg": "/static/media/Signs.f033303d.jpg",
     "static/media/Tabling.jpg": "/static/media/Tabling.07bf9b1c.jpg",
     "static/media/volunteer.scss": "/static/media/check.42a32373.svg",
-    "static/media/logo.png": "/static/media/logo.9d935bc1.png"
+    "static/media/logo.png": "/static/media/logo.9d935bc1.png",
+    "static/media/social-Email.svg": "/static/media/social-Email.dfda1dfa.svg",
+    "static/media/social-Facebook.svg": "/static/media/social-Facebook.72ad372d.svg",
+    "static/media/social-Insta.svg": "/static/media/social-Insta.7f4413a5.svg",
+    "static/media/social-Twitter.svg": "/static/media/social-Twitter.d2d69a8e.svg"
   }
 }
