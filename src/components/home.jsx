@@ -16,11 +16,11 @@ class Home extends Component {
         <div className="segment segment--first">
           <img src={logo} alt="Queens For Warren Logo" className="logo" />
           <div className="segment__text">
-            Queens for Warren is an inclusive group of grassroots volunteers.
-            Our goal is to mobilize Queens residents to canvass, table,
-            flier, text & phone bank, and host events in order to talk to
-            their neighbors about why Elizabeth Warren should be our next
-            president. We hope you’ll join us!
+            Queens for Warren is an inclusive group of grassroots volunteers who
+            support Elizabeth Warren. Our goal is to mobilize Queens residents to
+            canvass, table, flier, text bank, phone bank, and host events in order
+            to talk to their neighbors about why Elizabeth Warren should be our
+            next president. We hope you’ll join us!
           </div>
           <div className="segment__links">
             <a
@@ -43,7 +43,7 @@ class Home extends Component {
               className="segment__link segment__link--last" 
               to="/volunteer"
             >
-              Newsletter
+              Newsletter Signup
             </Link>
           </div>
         </div>
