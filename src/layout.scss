@@ -28,7 +28,7 @@
   position: absolute;
   background-color: $queensBlue;
   width: 50%;
-  min-width: 700px;
+  min-width: 720px;
   overflow-y: scroll;
 
   @media (max-width: $mobileBreakpoint) {
@@ -40,7 +40,7 @@
   }
 
   .container {
-    padding: 25px 60px;
+    padding: 25px 80px;
     position: relative;
     box-sizing: border-box;
     height: auto;

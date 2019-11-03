@@ -2,7 +2,7 @@
 
 h1 {
   font-size: 40px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: left;
   margin-bottom: 5px;
 }
@@ -10,21 +10,17 @@ h1 {
 .vol {
   &__info {
     text-align: left;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 1.44;
     font-size: 18px;
     margin-top: 7px;
 
     &--top {
-      margin-top: 30px;
+      margin-top: 10px;
     }
   }
   &__form {
-    padding: 40px;
-
-    @media (max-width: $mobileBreakpoint) {
-      padding: 40px 0;
-    }
+    padding: 40px 0;
   }
 
   &__check {
@@ -98,7 +94,7 @@ h1 {
     text-align: right;
     color: $errorRed;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   &__inputs {
@@ -131,7 +127,7 @@ h1 {
 
   &__text-input {
     border: solid 2px white;
-    background-color: #283052;
+    background-color: $queensBlue;
     color: white;
     font-size: 18px;
     line-height: 1.44;
@@ -159,7 +155,7 @@ h1 {
 
     &--visited:invalid {
       border-color: $errorRed;
-      background-image: url('./assets/x-icon-2.png');
+      background-image: url('./assets/UI-alert-circle.svg');
       background-repeat: no-repeat;
       background-position: right;
       background-origin: content-box;
@@ -175,14 +171,6 @@ h1 {
     margin: auto;
   }
 
-  &__done {
-    color: $queensYellow;
-    font-size: 18px;
-    line-height: 1.44;
-    margin-top: 30px;
-    display: block;
-  }
-
   &__flash {
     position: fixed;
     top: 0;
@@ -193,25 +181,43 @@ h1 {
     left: 0;
     z-index: 1;
   }
+
+  &__cancel {
+    color: $queensYellow;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 16px;
+    display: block;
+    transition: color 300ms ease-in-out;
+
+    &:hover {
+      color: $darkQueensYellow;
+    }
+  }
+
+  &__header {
+    margin-top: 60px;
+  }
 }
 
 .button {
-  width: 265px;
-  background-color: $queensYellow;
+  width: 224px;
+  background-color: $libertyGreen;
   color: $queensBlue;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   border: unset;
-  border-radius: 1px;
+  border-radius: 3px;
   cursor: pointer;
   transition: background-color 300ms ease-in-out;
   display: block;
   text-decoration: none;
   padding: 15px 0;
   line-height: 1.44;
+  margin-top: 7px;
 
   &:hover {
-    background-color: $darkQueensYellow;
+    background-color: $darkLibertyGreen;
   }
 }
 
@@ -233,21 +239,18 @@ h1 {
 
 .training {
   &__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding-top: 10px;
-    margin-top: 50px;
+    margin-top: 38px;
     margin-left: -5px;
     margin-right: -5px;
   }
 
   &__button {
     display: inline-block;
-    margin-bottom: 20px;
-    padding: 20px 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 1px;
+    margin-bottom: 17px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 12px;
+    box-sizing: border-box;
   }
 }

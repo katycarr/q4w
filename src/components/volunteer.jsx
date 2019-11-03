@@ -49,13 +49,16 @@ class Volunteer extends Component {
   renderDone() {
     return (
       <React.Fragment>
-        <h1>Thank you for subscribing to our newsletter!</h1>
+        <h1 className="vol__header">Woohoo — thanks for subscribing to our newsletter!</h1>
         <div className="vol__info vol__info--top">
-          Can’t wait to start volunteering? Sign up for one of these official campaign
-          trainings so that you can hit the ground running:
+          Keep an eye on your inbox for an email with the 
+          <span role="img" aria-label="crown"> 👑</span>
+          emoji in the subject line :)&nbsp; Just can’t wait to start volunteering?
+          Sign up for one of these official campaign trainings so that you
+          can hit the ground running:
         </div>
         <Trainings />
-        <Link to="/" className="vol__done">Done</Link>
+        <Link to="/" className="vol__cancel">Done</Link>
       </React.Fragment>
     );
   }
@@ -70,7 +73,7 @@ class Volunteer extends Component {
         <Link to="/" className="close-link">&times;</Link>
         { this.state.done ? this.renderDone() :
             <React.Fragment>
-              <h1>Join Us!</h1>
+              <h1 className="vol__header">Join Us!</h1>
               <div className="vol__info">
                 Sign up for our newsletter to get updates about volunteer opportunities,
                 upcoming events, and Queens for Warren news. And don’t worry, we only
@@ -79,6 +82,8 @@ class Volunteer extends Component {
               <form className="vol__form" onSubmit={this.handleSubmit}>
                 {this.renderTextInputs()}
                 <input type="submit" className="vol__submit button" value="Subscribe"/>
+                <Link to="/" className="vol__cancel">Cancel</Link>
+                
               </form>
             </React.Fragment>
         }
