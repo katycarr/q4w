@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Ig Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop---Landing" transform="translate(-255.000000, -675.000000)" stroke="#232444" stroke-width="2">
+            <g id="Left">
+                <g id="Content" transform="translate(66.000000, 75.000000)">
+                    <g id="Social-Icons" transform="translate(180.000000, 591.000000)">
+                        <g id="Insta">
+                            <g id="Ig-Icon" transform="translate(10.000000, 10.000000)">
+                                <rect id="Rectangle" x="0" y="0" width="19" height="19" rx="4.5"></rect>
+                                <path d="M12.9619816,9.07210611 C13.1834555,10.6083805 12.4221491,12.1175662 11.0734744,12.8158126 C9.72479967,13.514059 8.0928285,13.2439397 7.02518443,12.1457511 C5.95754037,11.0475624 5.6949341,9.36890162 6.37375974,7.98164224 C7.05258538,6.59438285 8.51979512,5.81129592 10.0133402,6.03910611 C11.5383887,6.27172151 12.735836,7.50342702 12.9619816,9.07210611 Z" id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

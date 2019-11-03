@@ -2,7 +2,7 @@
 
 .social {
   margin: auto;
-  margin-top: 30px;
+  margin-top: 6px;
   display: inline-block;
 
   @media (max-width: $mobileBreakpoint) {
@@ -12,28 +12,24 @@
   }
 
   &__wrapper {
-    width: 28px;
-    height: 28px;
-    box-sizing: content-box;
-    display: inline-block;
-    color: rgb(183,228,207);
-    margin: 0 4px;
-    opacity: 1;
-    transition: opacity 170ms ease-in-out;
+    width: 39px;
+    height: 39px;
+    display: inline-flex;
+    margin: 0 12px;
+    transition: background-color 300ms ease-in-out;
+    background-color: $queensYellow;
+    border-radius: 20px;
 
     &--dim {
-      opacity: 0.4;
+      background-color: $darkQueensYellow;
     }
 
     &:hover {
-      opacity: 1;
+      background-color: $queensYellow;
     }
   }
 
   &__icon {
-    line-height: 28px;
-    vertical-align: bottom;
-    font-size: 18px;
-    height: 18px;
+    margin: auto;
   }
 }
