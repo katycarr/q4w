@@ -6,7 +6,7 @@ const Trainings = () => {
   const ewBase = 'https://events.elizabethwarren.com'
   const events = `${ewBase}/event/`;
   const buttons = [
-    { name: 'Cavass Training', url: `${events}/109508` },
+    { name: 'Canvass Training', url: `${events}/109508` },
     { name: 'Reach Training', url: `${events}/112385` },
     { name: 'Phone Bank Training', url: `${events}/112385` },
     { name: 'Text Bank Training', url: `${events}/99673` },
