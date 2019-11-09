@@ -10,7 +10,6 @@ h1 {
 .vol {
   &__info {
     text-align: left;
-    font-weight: 400;
     line-height: 1.44;
     font-size: 18px;
     margin-top: 7px;
@@ -43,7 +42,6 @@ h1 {
     &__label {
       vertical-align: middle;
       font-size: 18px;
-      font-weight: 400;
       line-height: 1.44;
       cursor: pointer;
 
@@ -94,7 +92,6 @@ h1 {
     text-align: right;
     color: $errorRed;
     font-size: 14px;
-    font-weight: 400;
   }
 
   &__inputs {
@@ -205,7 +202,6 @@ h1 {
   background-color: $libertyGreen;
   color: $queensBlue;
   font-size: 18px;
-  font-weight: 500;
   border: unset;
   border-radius: 3px;
   cursor: pointer;
