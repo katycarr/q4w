@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../home.scss';
-import logo from '../assets/logo.png';
+import logo from '../assets/Queens-for-Warren_Logo.svg';
 import SocialLinks from './social-links';
 import Layout from './layout';
 
@@ -14,7 +14,9 @@ class Home extends Component {
     return (
       <Layout>
         <div className="segment segment--first">
-          <img src={logo} alt="Queens For Warren Logo" className="logo" />
+          <div className="logo__container">
+            <img src={logo} alt="Queens For Warren Logo" className="logo" />
+          </div>
           <div className="segment__text">
             Queens for Warren is an inclusive group of grassroots volunteers who
             support Elizabeth Warren. Our goal is to mobilize Queens residents to
