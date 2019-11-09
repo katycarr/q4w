@@ -4,9 +4,10 @@
   height: calc(100% - 10px);
   position: absolute;
   width: 50%;
+  overflow: hidden;
   // if the content div is at its min width, 700px (more than half the screen)
   @media (max-width: 1400px) { 
-    width: calc(100% - 700px);
+    width: calc(100% - 720px);
   }
   right: 0;
 
@@ -19,12 +20,13 @@
 
   &__img {
     opacity: 1;
-    margin: auto;
     left: 50%;
     transform: translate(-50%, 0);
-    height: 100%;
     position: absolute;
     transition: opacity 1s linear;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
     @media(max-width: $mobileBreakpoint) {
       position: absolute;
