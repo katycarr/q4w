@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "84faaf3323e63c43875c3d1872270a3a",
+    "revision": "7f0c6ae90ea3ae89377ae8e5f972cb56",
     "url": "/index.html"
   },
   {
-    "revision": "41d4d9c0e8184485389b",
-    "url": "/static/css/main.b5a2ff0d.chunk.css"
+    "revision": "f4eb1962813e6bbbff90",
+    "url": "/static/css/main.b5909cce.chunk.css"
   },
   {
     "revision": "4cbbc7dad16687c06a0f",
     "url": "/static/js/2.015f6697.chunk.js"
   },
   {
-    "revision": "41d4d9c0e8184485389b",
-    "url": "/static/js/main.34757b0c.chunk.js"
+    "revision": "f4eb1962813e6bbbff90",
+    "url": "/static/js/main.71528508.chunk.js"
   },
   {
     "revision": "d9560ae1fa670ce2f2dd",
@@ -48,6 +48,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Liz.2e35c3f0.jpg"
   },
   {
+    "revision": "9dccef04c26a420327a942c60817eda6",
+    "url": "/static/media/Queens-for-Warren_Logo.9dccef04.svg"
+  },
+  {
     "revision": "0c9db247eba8b9044dfdb51c01a33fcc",
     "url": "/static/media/Sanger.0c9db247.jpg"
   },
@@ -66,10 +70,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "42a32373d39b41812ed979a1410f8b43",
     "url": "/static/media/check.42a32373.svg"
-  },
-  {
-    "revision": "9d935bc1fdae2fbb675dffd5ae001c7c",
-    "url": "/static/media/logo.9d935bc1.png"
   },
   {
     "revision": "dfda1dfaad7889a183e906aef4b8096b",
