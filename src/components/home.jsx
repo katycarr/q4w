@@ -43,7 +43,7 @@ class Home extends Component {
             </a>
             <Link
               className="segment__link segment__link--last" 
-              to="/volunteer"
+              to="/newsletter"
             >
               Newsletter Signup
             </Link>

@@ -15,7 +15,7 @@ describe('Home', () => {
     expect(wrapper.find('img.logo').alt).not.toBeNull();
   });
   it('renders a Link component to volunteer page', () => {
-    expect(wrapper.find('Link').prop('to')).toEqual('/volunteer');
+    expect(wrapper.find('Link').prop('to')).toEqual('/newsletter');
   });
   it('renders links to event and donate pages', () => {
     expect(wrapper.containsAllMatchingElements([
