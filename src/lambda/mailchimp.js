@@ -4,11 +4,7 @@ import Mailchimp from 'mailchimp-api-v3';
 const apiKey = process.env.REACT_APP_MAILCHIMP_KEY;
 const listId = process.env.REACT_APP_LIST_ID;
 
-console.log(Mailchimp);
-
-console.log(apiKey);
 const mailchimp = new Mailchimp(apiKey);
-console.log(mailchimp);
 
 const headers = {
     "Access-Control-Allow-Origin" : "*",
@@ -60,7 +56,6 @@ export async function handler(event, context) {
           headers,
       };
     }
-    console.log(e);
     return {
       statusCode: 400,
       body: JSON.stringify({ msg: e.message }),

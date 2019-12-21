@@ -43,7 +43,7 @@ class Volunteer extends Component {
       phone: e.target.phone.value,
     })
       .then(() => this.setState({ done: true, error: false }))
-      .catch((err) => { console.log(err.msg); this.setState({ error: true }); });
+      .catch((err) => { console.log(err); this.setState({ error: true }); });
   }
 
   renderDone() {
