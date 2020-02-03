@@ -9002,7 +9002,7 @@ prop-types-exact@^1.2.0:
     object.assign "^4.1.0"
     reflect.ownkeys "^0.2.0"
 
-prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9271,6 +9271,13 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
 
+react-meta-tags@^0.7.4:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/react-meta-tags/-/react-meta-tags-0.7.4.tgz#c506b453e7f89e006d8053afcf47a1f747240e43"
+  integrity sha512-ZSnZeEx+OVE5x6EK9oX6Qg3yGCCcxbnscQGu6S+ewglIi38KqEspcAgShggFSOZd5+5jgQB91OiRA+GX7zbrOA==
+  dependencies:
+    prop-types "^15.6.0"
+
 react-router-dom@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.0.1.tgz#ee66f4a5d18b6089c361958e443489d6bab714be"
@@ -9360,6 +9367,13 @@ react-scripts@3.1.1:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.0.7"
+
+react-structured-data@^0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/react-structured-data/-/react-structured-data-0.0.14.tgz#7a851cb65ef26d63244e3b6d5370c751d0a86a33"
+  integrity sha512-B1elbCypGIuLGSrJ3ESqLKepYotELbCpAZBAxsn1DeH2c40XI01Ll568xjGvipTqxvetscuCqm9/wD4GF+DIXw==
+  dependencies:
+    prop-types "^15.6.0"
 
 react-test-renderer@^16.0.0-0:
   version "16.9.0"

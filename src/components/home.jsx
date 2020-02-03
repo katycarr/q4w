@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import MetaTags from 'react-meta-tags';
+import { JSONLD, Generic } from 'react-structured-data';
 import '../home.scss';
 import logo from '../assets/Queens-for-Warren_Logo.svg';
 import SocialLinks from './social-links';
@@ -13,6 +15,20 @@ class Home extends Component {
   render() {
     return (
       <Layout>
+        <JSONLD>
+          <Generic type="organization" jsonldtype="Organization" schema={{
+            url: 'http://queensforwarren.com',
+            logo: 'https://www.queensforwarren.com/static/media/Queens-for-Warren_Logo.9dccef04.svg',
+          }}
+        />
+        </JSONLD>
+        <MetaTags>
+          <title>Queens for Warren</title>
+          <meta name="description"
+            content="Queens for Warren is an inclusive group of grassroots volunteers
+              who support Elizabeth Warren."
+          />
+        </MetaTags>
         <div className="segment segment--first">
           <div className="logo__container">
             <img src={logo} alt="Queens For Warren Logo" className="logo" />

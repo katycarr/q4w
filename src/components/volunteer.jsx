@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import MetaTags from 'react-meta-tags';
 import axios from 'axios';
 import Layout from './layout';
 import '../volunteer.scss';
@@ -66,6 +67,10 @@ class Volunteer extends Component {
   render() {
     return (
       <Layout>
+        <MetaTags>
+          <title>Queens for Warren Newsletter Signup</title>
+          <meta name="description" content="Sign up for our newsletter to get updates about volunteer opportunities, upcoming events, and Queens for Warren news." />
+        </MetaTags>
         { this.state.error && <FlashMessage duration={5000}>
             <div className="vol__flash">Oh no! There was an error submitting your info.</div>
           </FlashMessage>
